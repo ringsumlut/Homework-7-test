@@ -10,7 +10,7 @@ signUpForm.addEventListener('submit', (e) => {
 
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
         console.log(cred);
-        alert("Hi, ", firstname.value, lastname.value)
+        alert("Welcome!")
     })
 
 })
@@ -25,7 +25,7 @@ signInForm.addEventListener('submit', (e) => {
 
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         console.log(cred);
-        alert("Hi, ", lastname)
+        alert("Welcome!")
     })
 
 })
